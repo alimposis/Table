@@ -1,0 +1,66 @@
+.wrapper {
+    position: fixed;
+    top: 100px;
+    left: 750px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid green;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    z-index: 1;
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
+}
+.inputName {
+    width: 200px;
+    height: 30px;
+}
+.buttonGroup {
+    display: flex;
+}
+.buttonOk {
+    position: static;
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    &:hover {
+        background-color: rgb(255, 93, 87);
+    }
+}
+.buttonNo {
+    position: static;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    transition: 0.5s;
+    &:hover {
+        background-color: rgb(255, 93, 87);
+    }
+}
+.modalInput {
+    width: 200px;
+    height: 30px;
+    &:hover {
+        border: solid 1px rgb(255, 93, 87);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.spanError {
+    color: red;
+    font-size: 24px;
+}
